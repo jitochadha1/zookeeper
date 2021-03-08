@@ -126,6 +126,13 @@
         "hungry"
       ],
       "id": "12"
+    },
+    {
+      "name": "jito",
+      "species": "lemur",
+      "diet": "carnivore",
+      "personalityTraits": [],
+      "id": "13"
     }
   ]
 }
