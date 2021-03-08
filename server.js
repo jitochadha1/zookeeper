@@ -86,8 +86,8 @@ function validateAnimal(animal) {
     return true;
 }
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/index.html'));
+app.get('/animals', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/animals.html'));
 });
 
 app.get('/api/animals', (req, res) => {
@@ -97,6 +97,15 @@ app.get('/api/animals', (req, res) => {
     }
     res.json(results);
 });
+
+app.get('/zookeepers', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/zookeepers.html'));
+});
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/index.html'));
+});
+
 
 app.post('/api/animals', (req, res) => {
     //set id based on what the next index of the array will be
