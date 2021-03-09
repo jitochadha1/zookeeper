@@ -41,11 +41,8 @@ const getAnimals = (formData = {}) => {
     .then(animalData => {
       console.log(animalData);
       printResults(animalData);
-    })
-
+    });
 };
-
-
 
 const handleGetAnimalsSubmit = event => {
   event.preventDefault();
@@ -79,3 +76,4 @@ const handleGetAnimalsSubmit = event => {
 $animalForm.addEventListener('submit', handleGetAnimalsSubmit);
 
 getAnimals();
+
